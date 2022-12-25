@@ -25,6 +25,7 @@
     .title {
       width: 100%;
       margin-top: 2rem;
+      position: sticky;
 
       h1 {
         text-align: center;
@@ -32,7 +33,23 @@
     }
 
     .ads-list {
+      @include mixins.displayStyle(column, center, flex-start);
       width: 100%;
+    }
+
+    // .vehicle-filter {
+    //   z-index: 10;
+    //   position: sticky;
+    //   top: 0;
+    //   background-color: #fff;
+    // }
+
+    .top-bar {
+      width: 100%;
+      z-index: 10;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
     }
   }
 

@@ -35,6 +35,7 @@
     }
 
     .controls {
+      cursor: pointer;
       width: 58px;
       height: 100%;
       @include mixins.displayStyle(column, center, center);

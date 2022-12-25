@@ -48,6 +48,13 @@ const AdvertisesPage = () => {
     setADTypeFilterValue(value);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     axios
       .get(
@@ -62,6 +69,7 @@ const AdvertisesPage = () => {
       .then((res) => {
         console.log(res.data.data);
         setAdvertises(res.data.data);
+        scrollToTop();
       });
   }, [vehicleFilterValue, ADTypeFilterValue]);
 
@@ -74,11 +82,14 @@ const AdvertisesPage = () => {
         <div className={classes.pic}>
           <img src={listPic} />
         </div>
-        <div className={classes.title}>
-          <h1>لیست تبلیغات</h1>
+        <div className={classes["top-bar"]}>
+          <div className={classes.title}>
+            <h1>لیست تبلیغات</h1>
+          </div>
+          <div className={classes["vehicle-filter"]}>
+            <VehicleFilter onVehicleFilterChange={handleVehicleFilterChange} />
+          </div>
         </div>
-
-        <VehicleFilter onVehicleFilterChange={handleVehicleFilterChange} />
         <div className={classes["ads-list"]}>
           {advertises && <AdvertisesList advertises={advertises} />}
         </div>
