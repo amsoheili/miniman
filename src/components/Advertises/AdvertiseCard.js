@@ -1,8 +1,7 @@
 import React from "react";
 import classes from "./AdvertiseCard.module.scss";
-import imgCardExample from "../../assets/images/cardPicExample.jpg";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { ReactComponent as ArrowBackIcon } from "../../assets/icons/arrowLeftWhite.svg";
+import { Link } from "react-router-dom";
 
 const AdvertiseCard = (props) => {
   return (
@@ -23,7 +22,9 @@ const AdvertiseCard = (props) => {
           <div className={classes.phoneNumber}>{props.data.phone}</div>
         </div>
         <div className={classes.controls}>
-          <ArrowBackIcon />
+          <Link to={`/advertise/${props.data.advertise_id}`}>
+            <ArrowBackIcon />
+          </Link>
         </div>
       </div>
     </div>

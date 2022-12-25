@@ -6,7 +6,7 @@ function App() {
   return (
     <Routes>
       <Route index path="/" element={<AdvertisesPage />} />
-      <Route exact path="/Advertise/:advertiseId" element={<AdvertisePage />} />
+      <Route exact path="/advertise/:advertiseId" element={<AdvertisePage />} />
     </Routes>
   );
 }
