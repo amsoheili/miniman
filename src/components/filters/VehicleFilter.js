@@ -1,5 +1,5 @@
 import { Box, Tab, Tabs } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import classes from "./VehicleFilter.module.scss";
 import { ReactComponent as BusIcon } from "../../assets/icons/bus.svg";
 import { ReactComponent as SubwayIcon } from "../../assets/icons/subway.svg";
@@ -8,11 +8,12 @@ import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
 import DirectionsSubwayIcon from "@mui/icons-material/DirectionsSubway";
 import DirectionsBusFilledIcon from "@mui/icons-material/DirectionsBusFilled";
 
-const VehicleFilter = () => {
-  const [value, setValue] = React.useState("one");
+const VehicleFilter = (props) => {
+  const [value, setValue] = useState("1");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    props.onVehicleFilterChange(+newValue);
   };
 
   return (
@@ -24,19 +25,19 @@ const VehicleFilter = () => {
         aria-label="secondary tabs example"
       >
         <Tab
-          value="one"
+          value="1"
           label="تاکسی"
           icon={<LocalTaxiIcon />}
           iconPosition="start"
         />
         <Tab
-          value="two"
+          value="2"
           label="مترو"
           icon={<DirectionsSubwayIcon />}
           iconPosition="start"
         />
         <Tab
-          value="three"
+          value="3"
           label="اتوبوس"
           icon={<DirectionsBusFilledIcon />}
           iconPosition="start"

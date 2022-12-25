@@ -13,9 +13,10 @@
     :global(.MuiTabs-flexContainer) {
       @include mixins.displayStyle(row, center, center);
       :global(.MuiButtonBase-root) {
+        font-family: "IranSans";
         margin-left: 0.4rem;
         width: 30%;
-        font-size: 1.4rem;
+        font-size: 19px;
         :global(.MuiSvgIcon-root) {
           margin-left: 0.2rem;
         }

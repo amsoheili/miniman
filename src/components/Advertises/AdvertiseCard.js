@@ -9,7 +9,7 @@ const AdvertiseCard = (props) => {
     <div
       className={classes.main}
       style={{
-        background: `url(${imgCardExample}) no-repeat center center/cover`,
+        background: `url(${props.data.image}) no-repeat center center/cover`,
       }}
     >
       <div className={classes.overlay} />
@@ -17,10 +17,10 @@ const AdvertiseCard = (props) => {
       <div className={classes.content}>
         <div className={classes.data}>
           <div className={classes.name}>
-            <p>{props.data.name}</p>
+            <p>{props.data.description}</p>
           </div>
           <div className={classes.address}>{props.data.address}</div>
-          <div className={classes.phoneNumber}>{props.data.phoneNumber}</div>
+          <div className={classes.phoneNumber}>{props.data.phone}</div>
         </div>
         <div className={classes.controls}>
           <ArrowBackIcon />

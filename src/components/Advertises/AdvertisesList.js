@@ -5,8 +5,8 @@ const AdvertisesList = (props) => {
   return (
     <div>
       {props.advertises.map((ad, index) => (
-        <div className={classes["single-ad-container"]}>
-          <AdvertiseCard data={ad} key={index} />
+        <div className={classes["single-ad-container"]} key={index}>
+          <AdvertiseCard data={ad} />
         </div>
       ))}
     </div>
