@@ -1,0 +1,53 @@
+@use "../../styles/mixins";
+
+.main {
+  width: 506px;
+  height: 133px;
+  position: relative;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+  }
+
+  .content {
+    @include mixins.displayStyle(row, center, center);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+
+    .data {
+      width: calc(100% - 58px);
+      @include mixins.displayStyle(column, flex-start, center);
+      color: #fff;
+      padding-right: 2rem;
+
+      & > div {
+        margin: 0.2rem 0;
+        font-family: "IRANSansWebFaNum";
+        line-height: 31px;
+        font-size: 20px;
+      }
+    }
+
+    .controls {
+      width: 58px;
+      height: 100%;
+      @include mixins.displayStyle(column, center, center);
+      background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.501961) 0%,
+        rgba(0, 0, 0, 0.243137) 30.13%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      backdrop-filter: blur(1px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 8px 0px;
+    }
+  }
+}

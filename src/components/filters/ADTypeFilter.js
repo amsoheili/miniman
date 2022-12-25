@@ -17,8 +17,6 @@ const ADTypeFilter = () => {
       <Tabs
         value={value}
         onChange={handleChange}
-        textColor="primary"
-        indicatorColor="primary"
         aria-label="secondary tabs example"
       >
         <Tab value="one" label="تبلیغات طلایی" icon={<GoldADIcon />} />

@@ -6,6 +6,34 @@ import VehicleFilter from "../components/filters/VehicleFilter";
 import AdvertisesList from "../components/Advertises/AdvertisesList";
 import ADTypeFilter from "../components/filters/ADTypeFilter";
 
+const advertises = [
+  {
+    name: "فروشگاه ساعت ارزان",
+    address: "میدان تجریش، مجتمع ارگ، پلاک 256",
+    phoneNumber: "02122396264",
+  },
+  {
+    name: "فروشگاه ساعت ارزان",
+    address: "میدان تجریش، مجتمع ارگ، پلاک 256",
+    phoneNumber: "02122396264",
+  },
+  {
+    name: "فروشگاه ساعت ارزان",
+    address: "میدان تجریش، مجتمع ارگ، پلاک 256",
+    phoneNumber: "02122396264",
+  },
+  {
+    name: "فروشگاه ساعت ارزان",
+    address: "میدان تجریش، مجتمع ارگ، پلاک 256",
+    phoneNumber: "02122396264",
+  },
+  {
+    name: "فروشگاه ساعت ارزان",
+    address: "میدان تجریش، مجتمع ارگ، پلاک 256",
+    phoneNumber: "02122396264",
+  },
+];
+
 const AdvertisesPage = () => {
   return (
     <div className={classes.main}>
@@ -21,7 +49,9 @@ const AdvertisesPage = () => {
         </div>
 
         <VehicleFilter />
-        <AdvertisesList />
+        <div className={classes["ads-list"]}>
+          <AdvertisesList advertises={advertises} />
+        </div>
       </div>
       <div className={classes["ad-type-filter"]}>
         <ADTypeFilter />

@@ -20,7 +20,6 @@ const VehicleFilter = () => {
       <Tabs
         value={value}
         onChange={handleChange}
-        textColor="primary"
         indicatorColor="none"
         aria-label="secondary tabs example"
       >
