@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./AdvertisesPage.module.scss";
-import { ReactComponent as Icon } from "../assets/icons/backB.svg";
+import { ReactComponent as BackIcon } from "../assets/icons/backB.svg";
 import listPic from "../assets/images/listPic.jpg";
 import VehicleFilter from "../components/filters/VehicleFilter";
 import AdvertisesList from "../components/Advertises/AdvertisesList";
@@ -10,7 +10,7 @@ const AdvertisesPage = () => {
   return (
     <div className={classes.main}>
       <div className={classes["back-icon"]}>
-        <Icon />
+        <BackIcon />
       </div>
       <div className={classes.container}>
         <div className={classes.pic}>
@@ -22,6 +22,8 @@ const AdvertisesPage = () => {
 
         <VehicleFilter />
         <AdvertisesList />
+      </div>
+      <div className={classes["ad-type-filter"]}>
         <ADTypeFilter />
       </div>
     </div>
