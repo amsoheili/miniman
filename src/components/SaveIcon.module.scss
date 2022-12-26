@@ -1,0 +1,45 @@
+@use "../styles/mixins";
+
+// .icon {
+//   width: 48px;
+//   height: 48px;
+//   backdrop-filter: blur(5px);
+//   border-radius: 8px;
+//   cursor: pointer;
+//   @include mixins.displayStyle(row, center, center);
+//   :global(.MuiSvgIcon-root) {
+//     width: 23.51px;
+//     height: 30.23px;
+//   }
+// }
+
+.is-favourite {
+  width: 48px;
+  height: 48px;
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  cursor: pointer;
+  @include mixins.displayStyle(row, center, center);
+  background-color: #fff;
+
+  :global(.MuiSvgIcon-root) {
+    width: 28px;
+    height: 35px;
+    color: var(--second-color-theme);
+  }
+}
+
+.is-not-favourite {
+  background-color: var(--second-color-theme);
+  width: 48px;
+  height: 48px;
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  cursor: pointer;
+  @include mixins.displayStyle(row, center, center);
+  :global(.MuiSvgIcon-root) {
+    width: 23.51px;
+    height: 30.23px;
+    color: #fff;
+  }
+}
