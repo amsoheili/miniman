@@ -60,8 +60,6 @@ const AdvertisePage = () => {
     >
       <div className={classes.overlay} />
       <div className={classes["top-bar"]}>
-        {/* <div className={classes.icon}> */}
-        {/* <SaveIcon /> */}
         <SaveIcon
           isFavourite={advertiseData?.favourite}
           onClick={handleToggleFavourite}
