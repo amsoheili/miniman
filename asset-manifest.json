@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/miniman/static/css/main.c1d42b1c.css",
+    "main.js": "/miniman/static/js/main.7d53fdd5.js",
+    "static/js/787.18a6783c.chunk.js": "/miniman/static/js/787.18a6783c.chunk.js",
+    "static/media/bgPicExp.jpg": "/miniman/static/media/bgPicExp.541419569d73f758bce1.jpg",
+    "static/media/Iranian Sans.ttf": "/miniman/static/media/Iranian Sans.8c2ed8fb0154947263c5.ttf",
+    "static/media/listPic.jpg": "/miniman/static/media/listPic.4018b59b3c7731460a47.jpg",
+    "static/media/taxi.svg": "/miniman/static/media/taxi.841cae6275ac2e29bf1870582fc1a0d2.svg",
+    "static/media/gallery.svg": "/miniman/static/media/gallery.71a7fbaa708f5c1953f86734367ae533.svg",
+    "static/media/bus.svg": "/miniman/static/media/bus.3b46a4268ce6423f8ae047acb343644a.svg",
+    "static/media/subway.svg": "/miniman/static/media/subway.0c4d32deb55a2cc9141507d2ed59d5f3.svg",
+    "static/media/bronzeAdIcon.svg": "/miniman/static/media/bronzeAdIcon.1f0ce75ffe51bbfeff48384a3dd8c5b7.svg",
+    "static/media/goldAdIcon.svg": "/miniman/static/media/goldAdIcon.cd69b73c9fee02a6e40b15004dc43e46.svg",
+    "static/media/silverAdIcon.svg": "/miniman/static/media/silverAdIcon.03426bffa7465f936d8ec638b5b07bcb.svg",
+    "static/media/call.svg": "/miniman/static/media/call.919fa549a96ae91c98cf6d3c9b1e5314.svg",
+    "static/media/site.svg": "/miniman/static/media/site.1572ebf69daa0ee0b2d826301dc09bf7.svg",
+    "static/media/whatsApp.svg": "/miniman/static/media/whatsApp.e2c0297298afc850e72a4b0fe8986f4a.svg",
+    "static/media/instagram.svg": "/miniman/static/media/instagram.f5ecbadaf95ff6ca1ce9e6cca3af9a25.svg",
+    "static/media/location.svg": "/miniman/static/media/location.4b370a69c09b3683961aed5f38e0e558.svg",
+    "index.html": "/miniman/index.html",
+    "static/media/backA.svg": "/miniman/static/media/backA.5b86c231c84d0f85053f080ce3a45cc9.svg",
+    "static/media/arrowLeftWhite.svg": "/miniman/static/media/arrowLeftWhite.e23938cde5b55abab875eff29a1bf102.svg",
+    "static/media/save.svg": "/miniman/static/media/save.120ab921b9730addbc6ea85294c20546.svg",
+    "static/media/backB.svg": "/miniman/static/media/backB.f2f663e358b92941da7c4b6a4c6ec038.svg",
+    "main.c1d42b1c.css.map": "/miniman/static/css/main.c1d42b1c.css.map",
+    "main.7d53fdd5.js.map": "/miniman/static/js/main.7d53fdd5.js.map",
+    "787.18a6783c.chunk.js.map": "/miniman/static/js/787.18a6783c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1d42b1c.css",
+    "static/js/main.7d53fdd5.js"
+  ]
+}
