@@ -14,12 +14,16 @@ import { ReactComponent as GalleryIcon } from "../assets/icons/gallery.svg";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import instance from "../api/instance";
+import GalleryModal from "../components/Advertises/GalleryModal";
 
 const AdvertisePage = () => {
   const { advertiseId } = useParams();
   const [advertiseData, setAdvertiseData] = useState(null);
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
-  // console.log(advertiseId);
+  const handleOpenGallery = () => setIsGalleryOpen(true);
+  const handleCloseGallery = () => setIsGalleryOpen(false);
+
   useEffect(() => {
     instance({
       url: `get-advertise/${advertiseId}`,
@@ -68,7 +72,7 @@ const AdvertisePage = () => {
       </div> */}
       <div className={classes["bottom-bar"]}>
         <div className={classes.links}>
-          <div className={classes.link}>
+          <div className={classes.link} onClick={handleOpenGallery}>
             <GalleryIcon />
           </div>
           <div className={classes.link}>
@@ -106,6 +110,11 @@ const AdvertisePage = () => {
         </div>
       </div>
       <div className={classes["gold-bar"]} />
+      <GalleryModal
+        isOpen={isGalleryOpen}
+        images={advertiseData?.AdvertiseGalleries}
+        onClose={handleCloseGallery}
+      />
     </div>
   );
 };
