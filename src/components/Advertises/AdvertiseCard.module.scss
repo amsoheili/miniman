@@ -1,8 +1,10 @@
 @use "../../styles/mixins";
 // @media (max-width: 600px) {
 .main {
-  width: 506px;
-  height: 133px;
+  // width: 506px;
+  min-height: 133px;
+  width: 90%;
+
   position: relative;
   .overlay {
     position: absolute;

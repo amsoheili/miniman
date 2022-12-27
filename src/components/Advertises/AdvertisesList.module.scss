@@ -1,8 +1,14 @@
+@use "../../styles/mixins";
+
 // @media (max-width: 600px) {
 .main {
+  width: 100%;
   margin-bottom: 10rem;
+  @include mixins.displayStyle(column, center, center);
   .single-ad-container {
     margin-bottom: 2rem;
+    width: 100%;
+    @include mixins.displayStyle(column, center, center);
   }
 }
 // }

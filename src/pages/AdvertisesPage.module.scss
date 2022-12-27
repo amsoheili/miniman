@@ -33,7 +33,7 @@
     }
 
     .ads-list {
-      @include mixins.displayStyle(column, center, flex-start);
+      @include mixins.displayStyle(column, center, center);
       width: 100%;
     }
 
