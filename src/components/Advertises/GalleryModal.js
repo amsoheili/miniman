@@ -36,36 +36,11 @@ const GalleryModal = (props) => {
           timeout: 500,
         }}
       >
-        {/* <Paper> */}
-        {/* <Swiper
-          className={classes.mySwiper}
-          spaceBetween={50}
-          modules={[Pagination]}
-        >
-          <SwiperSlide>
-            <div className={classes.slide}>
-              <img src={imageList[0]?.url_path} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={classes.slide}>
-              <img src={imageList[1]?.url_path} />
-            </div>
-          </SwiperSlide> */}
-        {/* {props.images?.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className={classes.slide}>
-                <img src={image?.url_path} />
-              </div>
-            </SwiperSlide>
-          ))} */}
-        {/* </Swiper> */}
-        {/* </Paper> */}
         <div className={classes["carousel-container"]}>
           <Carousel sx={{ height: "100%", width: "100%" }}>
             {props.images?.map((image, index) => (
               <div className={classes.slide} key={index}>
-                <img src={image?.url_path} />
+                <img alt="gallery image" src={image?.url_path} />
               </div>
             ))}
           </Carousel>

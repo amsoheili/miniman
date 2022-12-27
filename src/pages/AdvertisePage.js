@@ -110,7 +110,7 @@ const AdvertisePage = () => {
         </div>
       </div>
       <div className={classes["gold-bar"]} />
-      {advertiseData.AdvertiseGalleries && (
+      {advertiseData?.AdvertiseGalleries && (
         <GalleryModal
           isOpen={isGalleryOpen}
           images={advertiseData?.AdvertiseGalleries}
