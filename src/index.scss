@@ -23,4 +23,7 @@ html,
 body {
   box-sizing: border-box;
   font-family: "IranSans";
+  width: 100vw;
+  height: 100vh;
+  min-width: 50px;
 }

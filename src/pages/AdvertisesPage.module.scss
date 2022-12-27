@@ -51,13 +51,14 @@
     width: 100%;
     bottom: 0;
     left: 0;
+    right: 0;
     z-index: 10;
   }
 }
 
-@media (max-width: 600px) {
-  .main {
-    height: 1031px;
-    width: 580px;
-  }
-}
+// @media (max-width: 600px) {
+//   .main {
+//     height: 1031px;
+//     width: 580px;
+//   }
+// }
