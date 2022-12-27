@@ -1,14 +1,18 @@
-import { Backdrop, Box, Fade, Modal, Typography } from "@mui/material";
+import { Backdrop, Box, Fade, Modal, Paper, Typography } from "@mui/material";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import classes from "./GalleryModal.module.scss";
+import { Pagination } from "swiper";
+import Carousel from "react-material-ui-carousel";
 
 const GalleryModal = (props) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  // const imageList = props.images ? props.images : [];
+  // console.log(props?.images);
   const style = {
     position: "absolute",
     top: "50%",
@@ -25,7 +29,6 @@ const GalleryModal = (props) => {
     <div className={classes.main}>
       <Modal
         className={classes.modal}
-        // sx={{ width: "200px", height: "200px", }}
         open={props.isOpen}
         onClose={props.onClose}
         BackdropComponent={Backdrop}
@@ -33,34 +36,40 @@ const GalleryModal = (props) => {
           timeout: 500,
         }}
       >
-        <Swiper
+        {/* <Paper> */}
+        {/* <Swiper
           className={classes.mySwiper}
           spaceBetween={50}
-          pagination={{
-            clickable: false,
-          }}
-          modules={[Navigation]}
-          style={{ width: "100%", height: "100%", borderRadius: "50px" }}
-          allowTouchMove={false}
+          modules={[Pagination]}
         >
-          {props.images?.map((image, index) => (
+          <SwiperSlide>
+            <div className={classes.slide}>
+              <img src={imageList[0]?.url_path} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={classes.slide}>
+              <img src={imageList[1]?.url_path} />
+            </div>
+          </SwiperSlide> */}
+        {/* {props.images?.map((image, index) => (
             <SwiperSlide key={index}>
-              <div
-                className={classes.slide}
-                style={{
-                  height: "100%",
-                  width: "100%",
-                }}
-              >
-                <img
-                  src={image.url_path}
-                  style={{ width: "100%", height: "100%", cursor: "pointer" }}
-                  className={classes["slide-img"]}
-                />
+              <div className={classes.slide}>
+                <img src={image?.url_path} />
               </div>
             </SwiperSlide>
-          ))}
-        </Swiper>
+          ))} */}
+        {/* </Swiper> */}
+        {/* </Paper> */}
+        <div className={classes["carousel-container"]}>
+          <Carousel sx={{ height: "100%", width: "100%" }}>
+            {props.images?.map((image, index) => (
+              <div className={classes.slide} key={index}>
+                <img src={image?.url_path} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </Modal>
     </div>
   );
