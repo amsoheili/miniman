@@ -9,7 +9,7 @@
 
   :global(.MuiTabs-root) {
     width: 100%;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     :global(.MuiTabs-flexContainer) {
       @include mixins.displayStyle(row, center, center);
       :global(.MuiButtonBase-root) {

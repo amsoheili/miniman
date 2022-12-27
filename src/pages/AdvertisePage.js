@@ -110,11 +110,13 @@ const AdvertisePage = () => {
         </div>
       </div>
       <div className={classes["gold-bar"]} />
-      <GalleryModal
-        isOpen={isGalleryOpen}
-        images={advertiseData?.AdvertiseGalleries}
-        onClose={handleCloseGallery}
-      />
+      {advertiseData.AdvertiseGalleries && (
+        <GalleryModal
+          isOpen={isGalleryOpen}
+          images={advertiseData?.AdvertiseGalleries}
+          onClose={handleCloseGallery}
+        />
+      )}
     </div>
   );
 };
