@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/miniman/static/css/main.c1d42b1c.css",
-    "main.js": "/miniman/static/js/main.7d53fdd5.js",
+    "main.css": "/miniman/static/css/main.df9062ea.css",
+    "main.js": "/miniman/static/js/main.c34c7146.js",
     "static/js/787.18a6783c.chunk.js": "/miniman/static/js/787.18a6783c.chunk.js",
     "static/media/bgPicExp.jpg": "/miniman/static/media/bgPicExp.541419569d73f758bce1.jpg",
     "static/media/Iranian Sans.ttf": "/miniman/static/media/Iranian Sans.8c2ed8fb0154947263c5.ttf",
@@ -23,12 +23,12 @@
     "static/media/arrowLeftWhite.svg": "/miniman/static/media/arrowLeftWhite.e23938cde5b55abab875eff29a1bf102.svg",
     "static/media/save.svg": "/miniman/static/media/save.120ab921b9730addbc6ea85294c20546.svg",
     "static/media/backB.svg": "/miniman/static/media/backB.f2f663e358b92941da7c4b6a4c6ec038.svg",
-    "main.c1d42b1c.css.map": "/miniman/static/css/main.c1d42b1c.css.map",
-    "main.7d53fdd5.js.map": "/miniman/static/js/main.7d53fdd5.js.map",
+    "main.df9062ea.css.map": "/miniman/static/css/main.df9062ea.css.map",
+    "main.c34c7146.js.map": "/miniman/static/js/main.c34c7146.js.map",
     "787.18a6783c.chunk.js.map": "/miniman/static/js/787.18a6783c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1d42b1c.css",
-    "static/js/main.7d53fdd5.js"
+    "static/css/main.df9062ea.css",
+    "static/js/main.c34c7146.js"
   ]
 }
